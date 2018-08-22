@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { environment } from '../../environments/environment';
+import { Users } from '../users';
+import { Repos } from '../repos';
 
 @Injectable({
   providedIn: 'root'
@@ -10,6 +12,5 @@ export class GithubService {
   api_Url = environment.apiUrl;
 
   constructor(private http: HttpClientModule) { }
-  searchGithub(username) {
-  }
+  searchGithub(username) {}
 }
