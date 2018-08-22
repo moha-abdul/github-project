@@ -10,4 +10,6 @@ export class GithubService {
   api_Url = environment.apiUrl;
 
   constructor(private http: HttpClientModule) { }
+  searchGithub(username) {
+  }
 }
