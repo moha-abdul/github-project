@@ -1,14 +1,33 @@
-# GithubProject
+# Github Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
+
+## Project Author
+
+Mohammed Abdullahi
+
+## Project Description
+
+Project name is github. Users enter a GitHub username into a form, submit it and see names and descriptions of that person's public repositories. A person can also look for repositories.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Project set up
+
+git clone https://github.com/moha-abdul/github-project-.git
+cd github-search
+code . (if using visual studio code as text editor)
+
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component component-name` to generate a new component.
+Run `ng generate directive directive-name` to generate a new directive.
+Run `ng generate pipe pipe-name` to generate a new pipe.
+Run `ng generate class class-name` to generate a new class.
+Run `ng generate service service-name` to generate new service.
+
 
 ## Build
 
@@ -25,3 +44,14 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+# MIT License
+
+## Copyright (c) 2018 Mohammed Abdullahi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
