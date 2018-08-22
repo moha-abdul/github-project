@@ -16,7 +16,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Project set up
 
-git clone https://github.com/moha-abdul/github-project-.git
+git clone https://github.com/moha-abdul/github-project.git
 cd github-search
 code . (if using visual studio code as text editor)
 
