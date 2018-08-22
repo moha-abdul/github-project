@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GithubService } from '../githubs/github.service';
 
 @Component({
   selector: 'app-github-nav',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GithubNavComponent implements OnInit {
 
-  constructor() { }
+  constructor(public githubservice: GithubService) { }
 
   ngOnInit() {
   }
