@@ -1,8 +1,9 @@
 export class Users {
   constructor(public username: string,
     public location: string,
-    public memberSince: Date,
     public followers: number,
-    public following: number) {
+    public following: number,
+    public memberSince: Date,
+    public email: string) {
 }
 }
