@@ -22,6 +22,5 @@ export class GithubNavComponent implements OnInit {
   }
 
   ngOnInit() {
-    // this.githubservice.searchGithubUser('moha-abdul');
   }
 }
