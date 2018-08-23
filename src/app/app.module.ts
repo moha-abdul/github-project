@@ -6,12 +6,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { GithubNavComponent } from './github-nav/github-nav.component';
 import { GithubUserProfileComponent } from './github-user-profile/github-user-profile.component';
+import { DayCountPipe } from './day-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     GithubNavComponent,
-    GithubUserProfileComponent
+    GithubUserProfileComponent,
+    DayCountPipe
   ],
   imports: [
     BrowserModule,
