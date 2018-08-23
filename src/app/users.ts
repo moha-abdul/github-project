@@ -3,7 +3,7 @@ export class Users {
     public location: string,
     public followers: number,
     public following: number,
-    public memberSince: Date,
+    public memberSinceDate: Date,
     public email: string) {
 }
 }

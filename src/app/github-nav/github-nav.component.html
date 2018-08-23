@@ -19,9 +19,34 @@
   </div>
 </nav>
 <div>
-  <p>{{githubservice.user.following}}</p>
+
+<div class="row">
+  <div class="col-md-5">
+      <div class="card mb-3">
+          <h3 class="card-header">Image</h3>
+          <div class="card-body">
+          </div>
+          <img src="" alt="Card image">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">View Profile</li>
+
+          </ul>
+        </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card border-success mb-3" style="max-width: 20rem;">
+      <div class="card-header">username: {{githubservice.user.username}}</div>
+      <div class="card-header">location: {{githubservice.user.location}}</div>
+      <div class="card-header">email: {{githubservice.user.email}}</div>
+      <div class="card-header">Member Since: {{githubservice.user.memberSinceDate|date}}</div>
+      <div class="card-header">following: {{githubservice.user.following}}</div>
+    </div>
+  </div>
+  <div class="col-md-7">
+
+  </div>
 </div>
-
-
-
 

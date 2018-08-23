@@ -16,7 +16,7 @@ export class GithubService {
   searchGithubUser(username) {
     // tslint:disable-next-line:class-name
     interface userInfo {
-      username: string;
+      login: string;
       location: string;
       followers: number;
       following: number;
@@ -30,7 +30,7 @@ export class GithubService {
         .then(
           githubData => {
             this.user = new Users(
-              githubData.username,
+              githubData.login,
               githubData.location,
               githubData.followers,
               githubData.following,
