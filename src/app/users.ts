@@ -1,5 +1,5 @@
 export class Users {
-  constructor(public username: string,
+  constructor(public userName: string,
     public location: string,
     public followers: number,
     public following: number,

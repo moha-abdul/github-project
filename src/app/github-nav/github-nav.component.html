@@ -38,12 +38,13 @@
   </div>
   <div class="col-md-4">
     <div class="card border-success mb-3" style="max-width: 20rem;">
-      <div class="card-header">username: {{githubservice.user.username}}</div>
+      <div class="card-header">username: {{githubservice.user.userName}}</div>
       <div class="card-header">location: {{githubservice.user.location}}</div>
       <div class="card-header">email: {{githubservice.user.email}}</div>
       <div class="card-header">Member Since: {{githubservice.user.memberSinceDate|date}}</div>
       <div class="card-header">following: {{githubservice.user.following}}</div>
-      <div class="card-header">Joined - days ago</div>
+      <div class="card-header">followers: {{githubservice.user.followers}}</div>
+      <div class="card-header">Joined {{githubservice.user.memberSinceDate|date|dayCount}} days ago</div>
     </div>
   </div>
   <div class="col-md-7">
