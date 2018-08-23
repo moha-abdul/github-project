@@ -4,6 +4,8 @@ export class Users {
     public followers: number,
     public following: number,
     public memberSinceDate: Date,
-    public email: string) {
+    public email: string,
+    public image: any,
+    public repos) {
 }
 }

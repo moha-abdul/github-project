@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GithubService } from '../githubs/github.service';
 
-
 @Component({
   selector: 'app-github-nav',
   templateUrl: './github-nav.component.html',
@@ -17,16 +16,12 @@ export class GithubNavComponent implements OnInit {
 
     } else {
       this.githubservice.searchGithubUser($input.target.value);
-      // this.githubservice.reposRequested($key.target.value)
+      this.githubservice.searchGithubRepos($input.target.value);
     }
-
-
     console.log($input.target.value);
-
   }
 
   ngOnInit() {
     // this.githubservice.searchGithubUser('moha-abdul');
   }
-
 }

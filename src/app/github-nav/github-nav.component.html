@@ -10,12 +10,7 @@
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input  (keyup)='searchUser($event)' #keyword class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
     </form>
-
-    <li class="nav-item">
-      <a class="nav-link" href="#">Github</a>
-    </li>
   </div>
 </nav>
 <div>
@@ -23,18 +18,16 @@
 <div class="row">
   <div class="col-md-5">
       <div class="card mb-3">
-          <h3 class="card-header">Image</h3>
-          <div class="card-body">
-          </div>
-          <img src="" alt="Card image">
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">View Profile</li>
-
-          </ul>
+        <h3 class="card-header">User Avatar</h3>
+        <div class="card-body"></div>
+        <img src="{{githubservice.user.image}}" alt="user image">
+        <div class="card-body">
+            <p class="card-text"></p>
         </div>
+        <button class="btn btn-primary">{{githubservice.user.followers}} followers</button>
+        <button class="btn btn-success">{{githubservice.user.following}} following</button>
+        <button class="btn btn-danger">{{githubservice.user.repos}} repos</button>
+      </div>
   </div>
   <div class="col-md-4">
     <div class="card border-success mb-3" style="max-width: 20rem;">
@@ -42,13 +35,26 @@
       <div class="card-header">location: {{githubservice.user.location}}</div>
       <div class="card-header">email: {{githubservice.user.email}}</div>
       <div class="card-header">Member Since: {{githubservice.user.memberSinceDate|date}}</div>
-      <div class="card-header">following: {{githubservice.user.following}}</div>
-      <div class="card-header">followers: {{githubservice.user.followers}}</div>
       <div class="card-header">Joined {{githubservice.user.memberSinceDate|date|dayCount}} days ago</div>
     </div>
   </div>
-  <div class="col-md-7">
-
-  </div>
 </div>
 
+<div  class="col-md-8">
+          <a href="#" class="list-group-item list-group-item-action">
+              {{githubservice.username.name}}
+            </a>
+          <ul style='list-style: none' *ngFor='let repo of githubservice.repos$ ; let i = index' class="list-group">
+              <li>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a target="_blank" href="{{githubservice.repos$[i].html_url}}">
+                    {{i+1}} . {{githubservice.repos$[i].name}}
+                </a>
+                <button class="btn btn-primary">{{githubservice.repos$[i].watchers}} watchers</button>
+                <button class="btn btn-success">{{githubservice.repos$[i].forks}} forks</button>
+              </li>
+            </ul>
+      </div>
+
+  </div>

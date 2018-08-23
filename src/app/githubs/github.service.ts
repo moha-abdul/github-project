@@ -23,6 +23,8 @@ export class GithubService {
       following: number;
       created_at: Date;
       email: string;
+      avatar_url: any;
+      public_repos: number;
     }
     const promise = new Promise(
       (resolve, reject) => {
@@ -37,6 +39,8 @@ export class GithubService {
               githubData.following,
               githubData.created_at,
               githubData.email,
+              githubData.avatar_url,
+              githubData.public_repos,
             );
 
             // console.log(this.user)
@@ -52,8 +56,9 @@ export class GithubService {
     );
     return promise;
   }
-  reposRequested(username) {
+  searchGithubRepos(username) {
 
+    // tslint:disable-next-line:class-name
     interface userInfo {
        name: string;
        forks: number;
@@ -66,13 +71,7 @@ export class GithubService {
         .toPromise()
         .then(
           githubData => {
-            // console.log(data[0])
-            // for(let i = 0 ; i<=30 ; i++){
-            //   this.repos.push(this.repo = new Repo(data[i].name , data[i].forks, data[i].watcher))
-            //   // console.log(data[i])
-            //   console.log(this.repos)
-            // }
-            // console.log(this.repos)
+            console.log(githubData[0]);
             this.repos$ = githubData;
             console.log(this.repos$);
 
