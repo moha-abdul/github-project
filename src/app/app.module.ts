@@ -5,11 +5,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { GithubNavComponent } from './github-nav/github-nav.component';
+import { GithubUserProfileComponent } from './github-user-profile/github-user-profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GithubNavComponent
+    GithubNavComponent,
+    GithubUserProfileComponent
   ],
   imports: [
     BrowserModule,
